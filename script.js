@@ -179,8 +179,4 @@ $(document).ready(function() {
           .fadeOut("slow");
       });
   });
-
-  $("#searchEmployee").change(function() {
-    console.log("You entered: ", $(this).val());
-  });
 });
