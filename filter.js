@@ -43,6 +43,15 @@ $(document).ready(function() {
       .get()
       .then(querySnapshot => LoadTableData(querySnapshot));
   });
+
+
+  $("#searchEmployee").change(function() {
+    console.log("You entered: ", $(this).val());
+    var searchValue = $(this).val();
+    employeesRef
+      .where("fName", "==", searchValue)
+      .onSnapshot(querySnapshot => LoadTableData(querySnapshot));
+  });
 });
 
 function LoadTableData(querySnapshot) {
