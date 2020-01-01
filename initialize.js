@@ -1,11 +1,11 @@
 var db = firebase.firestore();
 var employeesRef = db.collection('employees');
 
-employeesRef.get().then((querySnapshot) => {
-  querySnapshot.forEach((doc) => {
-    console.log(`${doc.id}`);
-  });
-});
+// employeesRef.get().then((querySnapshot) => {
+//   querySnapshot.forEach((doc) => {
+//     console.log(`${doc.id}`);
+//   });
+// });
 
 //  employeesRef.doc("R.Dikles").set({
 //     fName: "Ranice",
